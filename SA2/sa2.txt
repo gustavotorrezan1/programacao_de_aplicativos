@@ -1,0 +1,45 @@
+1-
+L = [5, 7, 2, 9, 4, 1, 3]
+a)len(L)
+b)max(L)
+c)min(L)
+d)sum(L)
+e)print('crescente', sorted(L))
+f)print('crescente', sorted(L, reverse = True))
+
+2-
+L = [4,8,7,4]
+avg = sum(L)/len(L)
+if avg > 0:
+    print("Positivo")
+else:
+    print("Negativo")
+
+3-
+L = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+avg = sum(L)/len(L)
+menor = min(L)
+maior = max(L)
+print('A média de L é: ', avg , " o mínimo é: ", menor , " e o mínimo: ", maior)
+
+4-
+def linha(N):
+    for i in range(N):
+        print(end='_')
+    print(" ")
+linha(10)
+
+5-
+def imprime_lista(L):
+    contador=0
+    for valor in L:
+        contador = contador + 1
+        print(contador, ')', valor)
+imprime_lista('11111111')
+
+6-
+hora = float(input('Quantas horas voce quer conerter em segundos?'))
+segundo = hora*3600
+print(segundo)
+
+7-print(" *", "\n * *", "\n  * *", "\n * *", "\n *** ***", "\n * *", "\n * *", "\n *****")
