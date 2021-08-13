@@ -1,9 +1,18 @@
-L = [5, 7, 2, 9, 4, 1, 3]
-print('tamanho igual a', len(L))
-print('maior número igual a',max(L))
-print('menor número igual a', min(L))
-print('soma de todos igual a',sum(L))
-print('crescente', sorted(L))
-print('crescente', sorted(L, reverse = True))
+list = [5, 7, 2, 9, 4, 1, 3]
+
+def total_elementos(list):
+    count = 0
+    for element in list:
+        count += 1
+    return count
+
+#print(total_elementos(list))
+i = 0
+maior = list[1]
+while(i <= total_elementos(list)):
+    if list[i + 1] > list[i]:
+        maior = list[i+1]
 
 
+
+print(maior)
